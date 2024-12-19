@@ -12,10 +12,14 @@ export default function Page() {
     "Vamos, va a estar genial",
     "Anímate, solo es un rato",
     "Mueve ve, chulla vida!",
+    "Que te detiene? ya pagaron el décimo",
+    "No sabes de lo que te vas a perder",
+    "La diversión está asegurada",
+    "Vas a tener de que hablar en el 2025",
   ]);
 
   const handleAlert = () => {
-    const randomNumber = Math.random() * 6;
+    const randomNumber = Math.random() * messagesRandom.length - 1;
     showSweetAlert({
       title: "Segur@",
       icon: "question",
