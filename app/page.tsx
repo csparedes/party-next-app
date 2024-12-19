@@ -6,7 +6,7 @@ import Link from "next/link";
 import ToggleTheme from "./ui/toggle-theme";
 
 export default function Page() {
-  const [messagesRandom, setMessagesRandom] = useState([
+  const [messagesRandom] = useState([
     "Ashhhh, aburrid@",
     "Te damos la oportunidad de lo pienses y elijas de nuevo",
     "Vamos, va a estar genial",
