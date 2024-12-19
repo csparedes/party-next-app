@@ -2,10 +2,12 @@
 
 export default function Localization() {
   const handleLocalization = () => {
-    window.open(
-      `https://www.google.com/maps/search/?api=1&query=0.349513,-78.107749`,
-      "_blank"
-    );
+    if (typeof window !== "undefined") {
+      window.open(
+        `https://www.google.com/maps/search/?api=1&query=0.349513,-78.107749`,
+        "_blank"
+      );
+    }
   };
   return (
     <button

@@ -7,10 +7,15 @@ interface Props {
 
 export default function Phone(props: Props) {
   const handlePhone = () => {
-    window.open(`https://wa.me/${props.phone}`, "_blank");
+    if (typeof window !== "undefined") {
+      window.open(`https://wa.me/${props.phone}`, "_blank");
+    }
   };
   return (
-    <button onClick={handlePhone} className="bg-green-600 p-2 flex gap-4 w-full md:w-40 items-center rounded-lg ">
+    <button
+      onClick={handlePhone}
+      className="bg-green-600 p-2 flex gap-4 w-full md:w-40 items-center rounded-lg "
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 32 32"
