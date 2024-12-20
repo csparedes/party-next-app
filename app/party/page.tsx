@@ -1,5 +1,5 @@
 import Localization from "../ui/localization";
-import Phone from "../ui/phone";
+// import Phone from "../ui/phone";
 
 export const metadata = {
   title: "Ven a la fiesta",
