@@ -40,9 +40,11 @@ export default function Page() {
           <h3 className="text-white font-semibold pt-4">
             🎉 <span className="font-bold">Colaboración:</span>
           </h3>
-          <p className="text-white font-semibold ">Tu entrada será con:</p>
+          <p className="text-white font-semibold py-2">Tienes las siguientes opciones a elegir, entre:</p>
+          
           <ul className="text-white font-semibold">
             <li>🍾 <span className="font-bold text-lg">Una botella</span> (de tu elección, ¡la que prefieras!)</li>
+            <li className="text-center">o</li>
             <li>💵 <span className="font-bold text-lg">$10 dólares</span>  (¡para que disfrutes más de la fiesta!)</li>
           </ul>
 
@@ -54,12 +56,12 @@ export default function Page() {
             <p>
               Para más detalles o preguntas, no dudes en contactarnos:
             </p>
-            <div className="flex w-full justify-between p-4 flex-wrap gap-4 items-center align-middle">
+            {/* <div className="flex w-full justify-between p-4 flex-wrap gap-4 items-center align-middle">
               <Phone name="Fernando" phone="+593986884823" />
               <Phone name="Santiago" phone="+593979844203" />
               <Phone name="José" phone="+593984510405" />
               <Phone name="Cristian" phone="+593963282192" />
-            </div>
+            </div> */}
 
             <div>
               <p className="py-2">Te dejamos la ubicación del lugar de encuentro</p>
